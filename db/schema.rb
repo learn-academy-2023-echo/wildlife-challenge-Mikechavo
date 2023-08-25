@@ -22,7 +22,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_24_224248) do
   end
 
   create_table "sightings", force: :cascade do |t|
-    t.string "latitude_longitude"
+    t.float "latitude"
+    t.float "longitude"
     t.string "date"
     t.integer "animal_id"
     t.datetime "created_at", null: false
