@@ -1,7 +1,8 @@
 class CreateSightings < ActiveRecord::Migration[7.0]
   def change
     create_table :sightings do |t|
-      t.string :latitude_longitude
+      t.float  :latitude
+      t.float :longitude
       t.string :date
       t.integer :animal_id
 
